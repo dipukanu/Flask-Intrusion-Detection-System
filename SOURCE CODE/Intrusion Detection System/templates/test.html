@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiger Intrusion Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class = "background">
+
+     
+
+    <div class="login">
+	<h1>Tiger Intrusion Detection System</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+	 <label for="Duration">Duration:</label>
+ <input type="text" name="duration" placeholder="duration" required="required" />
+ <label for="protocol_type">protocol_type:</label>
+					<select class="input1" id="protocol_type" name="protocol_type" required="required" placeholder="protocol_type">
+						<option value="0">icmp</option>
+						<option value="1">tcp</option>
+						<option value="2">udp</option>
+						 
+					</select></br>
+					</br>
+  <label for="src_bytes">src_bytes:</label>
+    <input type="text" name="src_bytes" placeholder="src_bytes" required="required" />
+ 
+        <label for="dst_bytes">dst_bytes:</label>
+   <input type="text" name="dst_bytes" placeholder="dst_bytes" required="required" />
+    
+	 <label for="is_host_login">is_host_login:</label>
+      <input type="text" name="is_host_login" placeholder="is_host_login" required="required" />
+	   <label for="is_guest_login">is_guest_login:</label>
+            <input type="text" name="is_guest_login" placeholder="is_guest_login" required="required" />
+			 <label for="diff_srv_rate">diff_srv_rate:</label>
+              <input type="text" name="diff_srv_rate" placeholder="diff_srv_rate" required="required" />
+			   <label for="srv_diff_host_rate">srv_diff_host_rate:</label>
+              <input type="text" name="srv_diff_host_rate" placeholder="srv_diff_host_rate" required="required" />
+			   <label for="flag">flag:</label>
+             <input type="text" name="flag" placeholder="flag" required="required" />
+              
+			 
+			 
+             
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict label</button>
+    </form>
+   <br>
+   <br>
+   class is {{ prediction_text }}
+  <br>
+  <br>
+<a href="{{ url_for('chart')}}"button type="submit" class="btn btn-primary btn-block btn-large">Analysis</button></a>
+ </div>
+  
+</body>
+</html>

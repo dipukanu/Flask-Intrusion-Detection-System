@@ -1,0 +1,7 @@
+duration,protocol_type,src_bytes,dst_bytes,is_host_login,is_guest_login,diff_srv_rate,srv_diff_host_rate,flag,labels
+0,tcp,491,0,0,0,0,0,9,normal
+0,udp,146,0,0,0,0.15,0,9,normal
+0,tcp,0,0,0,0,0.07,0,5,neptune(attacker)
+0,tcp,232,8153,0,0,0,0,9,normal
+15159,tcp,350,1185,1,0,0,1,9,r2l(attacker)
+0,tcp,0,0,0,0,0.07,0,5,dos(attacker)

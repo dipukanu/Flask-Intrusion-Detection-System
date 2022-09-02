@@ -1,0 +1,22 @@
+Software: Python 3.8 (64 bit)
+Software download link: https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64.exe
+
+
+For run this application, 
+1) First of all open your command prompt.
+
+2) Goto your local drive where the project is located.
+
+exampe for me:
+-->E:
+
+3) Then by the help of cd goto "Tiger Intrusion Detection System\Tiger Intrusion Detection System\SOURCE CODE\Intrusion Detection System" this folder where app.py is located.
+
+-->cd E:\Tiger Intrusion Detection System\Tiger Intrusion Detection System\SOURCE CODE\Intrusion Detection System
+
+4) Then run:
+-->python app.py
+
+You wil get a link of your local host. Open it by clicking on it.
+
+
